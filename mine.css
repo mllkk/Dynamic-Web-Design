@@ -1,20 +1,16 @@
 body{ 
     background-color: #121212;
+    color: rgba(255, 255, 255, 0.788);
 }
-
 
 .sidebar {
     background-color: #252525;
     position: fixed;
     top: 0;
-    /* rtl:raw:
-    right: 0;
-    */
     bottom: 0;
-    /* rtl:remove */
     left: 0;
-    z-index: 100; /* Behind the navbar */
-    padding: 48px 0 0; /* Height of navbar */
+    z-index: 100; 
+    padding: 48px 0 0;
   }
 
 
@@ -47,9 +43,6 @@ body{
     color: #2470dc;
   }
 
-  /*
-   * Navbar
-   */
 .navbar {
     background-color: #252525;
 }
@@ -94,10 +87,19 @@ body{
 #second-line .left h3 {
   color: #999999; /* Slightly darker gray */
 }
-
+.card-container .card-title,
+.card-container .card-text, .right h3 {
+  color: black;
+}
 .card {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 13px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
 #second-line .left .card {
@@ -154,10 +156,10 @@ body{
 }
 
 hr {
-    background-color: white; /* Arka plan rengini beyaz yapar */
-    height: 2px; /* Yatay çizginin kalınlığı */
-    border: none; /* Kenarlık olmadan */
-    margin: 20px 0; /* Üst ve alt boşluk */
+    background-color: white;
+    height: 2px; 
+    border: none; 
+    margin: 20px 0; 
 }
 
 
@@ -166,7 +168,7 @@ hr {
     width: 425px;
 }
 
-#myFooter {
+.myFooter {
     position: relative; 
     z-index: 1000; 
     color: white;
